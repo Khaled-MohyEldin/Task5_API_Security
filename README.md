@@ -1,41 +1,69 @@
-# Task 2 Weather App
+# API Validation Framework for Zippopotam.us (Task 1)
 
-**It verifies setup flow then going into setting and Changing some   
-    settings and then returning home page Validating Settings  
-    is applied and Correct Data is Displayed**  
+**Objective:** Build a foundational framework to automate testing for the **Zippopotam.us** public API endpoint: `/country/postal-code/`.
 
-- **Used Page Object Model for Scalability and Readability**
-- **Used Fluent POM and Descriptive Steps to make normal user understand it**
-- **Pop up Messages Challenged me as it does appear semiRandom**
-- **But I did Capture it's Locator and Handle it Using Wait**
-- **Used DriverFactory to Ensure only Single Insatnce of it**
+---
 
-## Prerequisite
-1. Having emulator / Real Device for Testing 
-2. Installing Weather APP on Device / Emulator  https://play.google.com/store/apps/details?id=com.info.weather.forecast
-3. Appium is installed and running locally on ipAddress=127.0.0.1 || port=4723
+## Implementation Details
 
-### Setup
+* **Data-Driven Testing (DDT):** Used JSON data to facilitate DDT, incorporating a mix of valid, invalid, and **Boundary Value Analysis (BVA)** test cases for robust negative testing.
+* **Schema Validation:** Implemented basic response body schema validation to ensure data integrity and structure, to be datailed once I get API Contract.
+* **Server Bug Mitigation:** Addressed a critical server bug where invalid requests resulted in a slow (30s+), incorrect **HTTP 500** (Internal Server Error) response instead of an expected client-side error (e.g., 400/404).
+* **Timeout Strategy:** Configured maximum request timeouts to effectively handle the slow, erroneous responses, simulating server instability for invalid test cases.
+* **Every invalid Request is Bugged here unfortunately**
+---
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/Khaled-MohyEldin/AppStore-Test-Automation.git
-   
-2. Install dependencies:
+## Steps
+
+1.  **Install dependencies**:
+
     ```bash
-   mvn clean install
+    npm install
+    ```
 
-5. Run test:
-   ```bash
-   mvn test
-   
-7. See Reults in Allure Reports
-   ```bash
-   allure serve allure-results
+2.  **Run the tests**:
 
-## Tech Stack
-- **Java 21**
-- **Appium 3.x**
-- **TestNG**
-- **Maven**
-- **Android Emulator / Real Device**
+    ```bash
+    npx playwright test
+    ```
+
+3.  **View Reports:**
+
+    * **Playwright HTML Report:**
+
+        ```bash
+        npx playwright show-report
+        ```
+
+    * **Allure Report:**
+
+        ```bash
+        allure serve allure-results
+        ```
+
+---
+
+## Test Coverage
+
+The test suite includes coverage for the following key scenarios:
+
+* **Positive Testing:** At least one valid country code and postal code combination for each of the 60+ supported countries.
+* **Input Validation (Negative Testing):**
+    * Non-existent, but validly-formatted postal codes (e.g., `99999`).
+    * Postal codes containing special characters (e.g., `12345!@#$`).
+    * Empty postal code fields.
+* **Edge Cases & Security:**
+    * Country code case sensitivity validation (must be valid regardless of case).
+    * Basic SQL Injection attempt in the postal code parameter.
+
+---
+
+## Results
+
+Screenshots of the generated reports:
+
+* **Allure Report**
+    ![alt text](AllureReport.png)
+* **PlayWright Report**
+    ![alt text](PlaywrightReport.png)
+

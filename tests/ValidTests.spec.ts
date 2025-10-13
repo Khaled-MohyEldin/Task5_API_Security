@@ -14,12 +14,6 @@ import {expectToMatchSchema} from '../utilities/Base';
     ===================
     also added some Case-insensitivity but i think it's low priority
     ============================
-    #Commands 
-    npx playwright test
-
-    npx playwright show-report
-
-    allure serve allure-results
 
 */
 
