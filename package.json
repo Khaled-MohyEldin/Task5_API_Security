@@ -1,0 +1,25 @@
+{
+  "name": "pr-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "web": "npx playwright test example --grep @web ",
+    "api": "npx playwright test --grep @api",
+    "safari": "npx playwright test --project=webkit "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.55.1",
+    "@types/node": "^24.5.0",
+    "allure-playwright": "^3.4.1"
+  },
+  "dependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "ajv": "^8.17.1",
+    "dotenv": "^17.2.3"
+  }
+}

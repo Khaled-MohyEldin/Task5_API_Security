@@ -1,0 +1,27 @@
+[
+  {
+    "country" : "GU",
+    "code": "96910", 
+    "invalidCode": "96933"
+  },
+  {
+    "country": "LK", 
+    "code": " *", 
+    "invalidCode": "96168"
+  }, 
+  {
+    "country": "LT", 
+    "code": "00001", 
+    "invalidCode": "00000"
+  }, 
+  {
+    "country": "JP", 
+    "code": "100-0001", 
+    "invalidCode": "099-0001"
+  },
+  {
+    "country": "MD", 
+    "code": "MD-2000", 
+    "invalidCode": "MD-7732"
+  }
+]

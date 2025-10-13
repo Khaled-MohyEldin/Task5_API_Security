@@ -1,0 +1,37 @@
+{
+    "type": "object",
+    "properties": {
+        "country": {
+            "type": "string"
+        },
+        "country abbreviation": {
+            "type": "string"
+        },
+        "post code": {
+            "type": "string"
+        },
+        "places": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "place name": {
+                        "type": "string"
+                    },
+                    "longitude": {
+                        "type": "string"
+                    },
+                    "latitude": {
+                        "type": "string"
+                    },
+                    "state": {
+                        "type": "string"
+                    },
+                    "state abbreviation": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
