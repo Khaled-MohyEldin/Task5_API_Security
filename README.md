@@ -11,6 +11,9 @@
 * **Server Bug Mitigation:** Addressed a critical server bug where invalid requests resulted in a slow (30s+), incorrect **HTTP 500** (Internal Server Error) response instead of an expected client-side error (e.g., 400/404).
 * **Timeout Strategy:** Configured maximum request timeouts to effectively handle the slow, erroneous responses, simulating server instability for invalid test cases.
 * **Every invalid Request is Bugged here unfortunately**
+* **Dynamic Data Testing** in case we need to test response data that's dynamic 
+    or change every time perdiod we might need to generate that json file right 
+    before test pipeline starts and add it to the workflow
 ---
 
 ## Steps

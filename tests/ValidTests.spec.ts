@@ -14,7 +14,6 @@ import {expectToMatchSchema} from '../utilities/Base';
     ===================
     also added some Case-insensitivity but i think it's low priority
     ============================
-
 */
 
 for (const dataSet of testData) {
@@ -39,6 +38,11 @@ for (const dataSet of testData) {
         //4. Validating Response Time 
         const resTime = Date.now() - startingTime;
         expect(resTime).toBeLessThan(1000);
+
+        //5. Validating some response values
+        expect(resBody['country abbreviation']).toBe(dataSet.country);
+        expect(resBody['post code']).toBe(dataSet.code);
+        expect(resBody.places.length).toBeGreaterThanOrEqual(1); // we should have at least one place
 
     });
 
