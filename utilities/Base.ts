@@ -1,7 +1,4 @@
-import { expect, test as base } from '@playwright/test'
-
-import * as dotenv from 'dotenv';
-import schema from '../test-data/schema.json';
+import { expect } from '@playwright/test'
 import Ajv from 'ajv';
 
 
