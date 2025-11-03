@@ -1,0 +1,5 @@
+{
+  success: false,
+  message: 'Invalid authorization token or API key.',
+  errorCode: 1028
+}
