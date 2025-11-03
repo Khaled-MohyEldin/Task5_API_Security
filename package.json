@@ -4,22 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "web": "npx playwright test example --grep @web ",
-    "api": "npx playwright test --grep @api",
-    "safari": "npx playwright test --project=webkit "
+    "security": "npx playwright test forget-password-security pickups-security",
+    "fullSecurity": "npx playwright test forget-password-security pickups-security bank-info-security"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "@playwright/test": "^1.55.1",
+    "@playwright/test": "^1.56.1",
     "@types/node": "^24.5.0",
     "allure-playwright": "^3.4.1"
   },
   "dependencies": {
     "@axe-core/playwright": "^4.10.2",
     "ajv": "^8.17.1",
-    "dotenv": "^17.2.3"
+    "dotenv": "^17.2.3",
+    "zod": "^4.1.12"
   }
 }

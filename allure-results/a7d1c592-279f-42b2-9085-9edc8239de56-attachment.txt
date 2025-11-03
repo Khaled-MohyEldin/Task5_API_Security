@@ -1,0 +1,9 @@
+Generated token for tests: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InVydmIxOWNKT0E4M044eHY2d0lzUCIsInJvbGVzIjpbIkJVU0lORVNTX0FETUlOIl0sImJ1c2luZXNzQWRtaW5JbmZvIjp7ImJ1c2luZXNzSWQiOiI2U2xuRmpodjVPRWFESWFBZWVjdGciLCJidXNpbmVzc05hbWUiOiJ0ZXN0IGNvbXBhbnkgbmFtZSJ9LCJlbWFpbCI6ImFtaXJhLm1vc2ErOTkxQGJvc3RhLmNvIiwicGhvbmUiOiIrMjAxMDU1NTkyODI5IiwiY291bnRyeSI6eyJfaWQiOiI2MGU0NDgyYzdjYjdkNGJjNDg0OWM0ZDUiLCJuYW1lIjoiRWd5cHQiLCJuYW1lQXIiOiLZhdi12LEiLCJjb2RlIjoiRUcifSwidG9rZW5UeXBlIjoiQUNDRVNTIiwidG9rZW5WZXJzaW9uIjoiVjIiLCJzZXNzaW9uSWQiOiIwMUs5NFhHU0RQVzBWMDk1OTUyQUJDTUM4ViIsImlhdCI6MTc2MjE3OTkyMiwiZXhwIjoxNzYzMzg5NTIyfQ.jPYn3MACa8Nkcx6jHvpV7hb7A3s78kth1d1Xvb1P5DM
+{"success":false,"message":"User is not authorized!. Not authorized to update param: [bankInfo.مصر]","errorCode":1007}
+SQL injection "' OR '1'='1" response: {"success":false,"message":"User is not authorized!. Not authorized to update param: [bankInfo.مصر]","errorCode":1007}
+{"success":false,"message":"User is not authorized!. Not authorized to update param: [bankInfo.مصر]","errorCode":1007}
+SQL injection "'; DROP TABLE users; --" response: {"success":false,"message":"User is not authorized!. Not authorized to update param: [bankInfo.مصر]","errorCode":1007}
+{"success":false,"message":"User is not authorized!. Not authorized to update param: [bankInfo.مصر]","errorCode":1007}
+SQL injection "'); DROP TABLE bank_accounts; --" response: {"success":false,"message":"User is not authorized!. Not authorized to update param: [bankInfo.مصر]","errorCode":1007}
+{"success":false,"message":"User is not authorized!. Not authorized to update param: [bankInfo.مصر]","errorCode":1007}
+SQL injection "' UNION SELECT * FROM bank_accounts; --" response: {"success":false,"message":"User is not authorized!. Not authorized to update param: [bankInfo.مصر]","errorCode":1007}

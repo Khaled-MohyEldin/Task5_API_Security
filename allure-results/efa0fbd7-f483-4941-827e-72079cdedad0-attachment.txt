@@ -1,0 +1,4 @@
+Special chars "Null byte" response: {"success":false,"message":"User is not authorized!. Not authorized to update param: [bankInfo.مصر]","errorCode":1007}
+Special chars "Unicode RTL" response: {"success":false,"message":"User is not authorized!. Not authorized to update param: [bankInfo.مصر]","errorCode":1007}
+Special chars "Zero-width" response: {"success":false,"message":"User is not authorized!. Not authorized to update param: [bankInfo.مصر]","errorCode":1007}
+Special chars "Emoji" response: {"success":false,"message":"User is not authorized!. Not authorized to update param: [bankInfo.مصر]","errorCode":1007}

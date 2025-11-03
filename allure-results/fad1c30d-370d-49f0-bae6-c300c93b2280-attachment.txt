@@ -1,0 +1,1 @@
+Error exposure test response: {"success":false,"message":"User is not authorized!. Not authorized to update param: [bankInfo.مصر]","errorCode":1007}

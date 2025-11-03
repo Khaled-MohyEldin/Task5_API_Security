@@ -1,0 +1,6 @@
+Malformed payload {} response: {"success":false,"message":"paymentInfoOtp is required","errorCode":777,"data":null}
+Malformed payload {"bankInfo":null} response: {"success":false,"message":"bankInfo must be of type object","errorCode":777,"data":null}
+Malformed payload {"bankInfo":{},"paymentInfoOtp":null} response: {"success":false,"message":"paymentInfoOtp must be a number","errorCode":777,"data":null}
+Malformed payload {"bankInfo":{"beneficiaryName":"test البنك الأهلي اليوناني - - NBG","bankName":"bankName","ibanNumber":"EG123456789012345678901234567","accountNumber":"123","مصر":"23456789012"},"paymentInfoOtp":"123","extraField":"injection"} response: {"success":false,"message":"User is not authorized!. Not authorized to update param: [bankInfo.مصر,extraField]","errorCode":1007}
+Malformed payload {"bankInfo":[],"paymentInfoOtp":{}} response: {"success":false,"message":"bankInfo must be of type object","errorCode":777,"data":null}
+Malformed payload {"bankInfo":{"beneficiaryName":"test البنك الأهلي اليوناني - - NBG","bankName":"bankName","ibanNumber":"EG123456789012345678901234567","accountNumber":"123","مصر":"23456789012"}} response: {"success":false,"message":"User is not authorized!. Not authorized to update param: [bankInfo.مصر]","errorCode":1007}

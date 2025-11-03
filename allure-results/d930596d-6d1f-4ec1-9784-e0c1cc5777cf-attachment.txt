@@ -1,0 +1,4 @@
+XSS attempt "<script>alert('xss')</script>" response: {"success":false,"message":"User is not authorized!. Not authorized to update param: [bankInfo.مصر]","errorCode":1007}
+XSS attempt "javascript:alert('xss')" response: {"success":false,"message":"User is not authorized!. Not authorized to update param: [bankInfo.مصر]","errorCode":1007}
+XSS attempt "<img src="x" onerror="alert(1)">" response: {"success":false,"message":"User is not authorized!. Not authorized to update param: [bankInfo.مصر]","errorCode":1007}
+XSS attempt ""><script>alert(document.cookie)</script>" response: {"success":false,"message":"User is not authorized!. Not authorized to update param: [bankInfo.مصر]","errorCode":1007}
